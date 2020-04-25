@@ -41,6 +41,7 @@
 		5717622024547D9F00F34257 /* DebaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DebaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5717622424547D9F00F34257 /* DebaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebaseTests.m; sourceTree = "<group>"; };
 		5717622624547D9F00F34257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5717622F24547DB400F34257 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 		571761FE24547D9E00F34257 = {
 			isa = PBXGroup;
 			children = (
+				5717622F24547DB400F34257 /* README.md */,
 				5717620924547D9E00F34257 /* Debase */,
 				5717622324547D9F00F34257 /* DebaseTests */,
 				5717620824547D9E00F34257 /* Products */,
