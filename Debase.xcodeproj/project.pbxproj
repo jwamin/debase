@@ -15,6 +15,7 @@
 		5717621A24547D9F00F34257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5717621924547D9F00F34257 /* main.m */; };
 		5717622524547D9F00F34257 /* DebaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5717622424547D9F00F34257 /* DebaseTests.m */; };
 		571762322454950200F34257 /* img.txt in Resources */ = {isa = PBXBuildFile; fileRef = 571762312454950200F34257 /* img.txt */; };
+		571762352454D1DA00F34257 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571762342454D1DA00F34257 /* WindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		5717622624547D9F00F34257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5717622F24547DB400F34257 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		571762312454950200F34257 /* img.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = img.txt; sourceTree = "<group>"; };
+		571762332454D1DA00F34257 /* WindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		571762342454D1DA00F34257 /* WindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 			children = (
 				5717620A24547D9E00F34257 /* AppDelegate.h */,
 				5717620B24547D9E00F34257 /* AppDelegate.m */,
+				571762332454D1DA00F34257 /* WindowController.h */,
+				571762342454D1DA00F34257 /* WindowController.m */,
 				5717620D24547D9E00F34257 /* ViewController.h */,
 				5717620E24547D9E00F34257 /* ViewController.m */,
 				57176230245494F200F34257 /* Resources */,
@@ -218,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571762352454D1DA00F34257 /* WindowController.m in Sources */,
 				5717621224547D9E00F34257 /* Debase.xcdatamodeld in Sources */,
 				5717620F24547D9E00F34257 /* ViewController.m in Sources */,
 				5717621A24547D9F00F34257 /* main.m in Sources */,
