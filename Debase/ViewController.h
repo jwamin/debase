@@ -8,8 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController <NSTextDelegate>
 
+@property (unsafe_unretained) IBOutlet NSTextView *textInputArea;
+@property (weak) IBOutlet NSImageView *imageView;
+
+@property NSString *value;
 
 @end
 
