@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "AppDelegate.h"
 
 @implementation ViewController
 
@@ -25,18 +24,6 @@
   [self updateBase64String];
   [self handleStringForImage];
 
-}
-
-- (void)viewDidAppear{
-  
-  AppDelegate *delegate = (AppDelegate *)[[NSApplication sharedApplication]delegate];
-  NSManagedObjectContext *context = [[delegate persistentContainer] viewContext];
-  
-  //the below are not there when view did load
-  NSWindow *window = [[self view] window];
-  NSWindowController *controller = [window windowController];
-  NSLog(@"%@ %@ %@ %@",delegate, context, window,controller);
-  
 }
 
 -(void)handleStringForImage{

@@ -15,11 +15,21 @@
 @implementation WindowController
 
 - (void)windowDidLoad {
-    [super windowDidLoad];
-    NSLog(@"loaded window");
+  [super windowDidLoad];
+  
+  NSLog(@"loaded window");
   NSLog(@"%@",[[self window] contentViewController]);
   [[self window] setTitle:@"Debase"];
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+  
+  AppDelegate *delegate = (AppDelegate *)[[NSApplication sharedApplication]delegate];
+  NSManagedObjectContext *context = [[delegate persistentContainer] viewContext];
+  
+  //the below are not there when view did load
+  NSWindow *window = [self window];
+  NSWindowController *controller = [window windowController];
+  NSLog(@"%@ %@ %@ %@",delegate, context, window,controller);
+  
+  // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
 
 - (void)windowWillLoad{
