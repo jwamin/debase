@@ -47,6 +47,7 @@
 		571762312454950200F34257 /* img.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = img.txt; sourceTree = "<group>"; };
 		571762332454D1DA00F34257 /* WindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		571762342454D1DA00F34257 /* WindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		5717627C2459B27A00F34257 /* dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 				5717627B2459B1E800F34257 /* Views */,
 				57176230245494F200F34257 /* Resources */,
 				5717621824547D9F00F34257 /* Info.plist */,
+				5717627C2459B27A00F34257 /* dev.xcconfig */,
 				5717621B24547D9F00F34257 /* Debase.entitlements */,
 				5717621024547D9E00F34257 /* Debase.xcdatamodeld */,
 			);
