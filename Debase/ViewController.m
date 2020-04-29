@@ -19,6 +19,8 @@
   
   NSURL *imageTextFileUrl = [[NSBundle mainBundle] URLForResource:@"img" withExtension:@"txt"];
   
+  [_textInputArea setFont:[NSFont fontWithName:@"Andale Mono" size:27.0]];
+  
   [_textInputArea setString:[NSString stringWithContentsOfURL:imageTextFileUrl encoding:NSUTF8StringEncoding error:nil]];
 
   [self updateBase64String];
