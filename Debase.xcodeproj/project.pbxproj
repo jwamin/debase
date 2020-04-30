@@ -48,6 +48,7 @@
 		571762332454D1DA00F34257 /* WindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		571762342454D1DA00F34257 /* WindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 		5717627C2459B27A00F34257 /* dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
+		57A2310B245A4DC900AC8242 /* shot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +115,7 @@
 		57176230245494F200F34257 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				57A2310A245A4DAB00AC8242 /* Screenshots */,
 				5717621324547D9F00F34257 /* Assets.xcassets */,
 				5717621524547D9F00F34257 /* Main.storyboard */,
 				571762312454950200F34257 /* img.txt */,
@@ -147,6 +149,14 @@
 				5717620E24547D9E00F34257 /* ViewController.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		57A2310A245A4DAB00AC8242 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				57A2310B245A4DC900AC8242 /* shot.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
