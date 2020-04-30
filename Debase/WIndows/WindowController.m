@@ -19,7 +19,10 @@
   
   NSLog(@"loaded window");
   NSLog(@"%@",[[self window] contentViewController]);
+  
   [[self window] setTitle:@"Debase"];
+  [[self window] setShowsToolbarButton:YES];
+  [[self window] setTitlebarAppearsTransparent:YES];
   
   AppDelegate *delegate = (AppDelegate *)[[NSApplication sharedApplication]delegate];
   NSManagedObjectContext *context = [[delegate persistentContainer] viewContext];

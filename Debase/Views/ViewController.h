@@ -14,6 +14,7 @@
 @property (weak) IBOutlet NSImageView *imageView;
 
 @property NSString *value;
+@property NSAttributedString *attrValue;
 
 @end
 
