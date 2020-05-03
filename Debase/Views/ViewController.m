@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ImageViewWithDragging.h"
 
 @implementation ViewController
 
@@ -46,7 +47,7 @@
   }
   
   [_imageView setImage:img];
-  
+  [(ImageViewWithDragging*)_imageView setProviderData:data];
 }
 
 -(void) runString{

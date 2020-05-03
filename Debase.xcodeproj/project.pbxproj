@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5715B13F245F72AD00D18266 /* ImageViewWithDragging.m in Sources */ = {isa = PBXBuildFile; fileRef = 5715B13E245F72AD00D18266 /* ImageViewWithDragging.m */; };
 		5717620C24547D9E00F34257 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5717620B24547D9E00F34257 /* AppDelegate.m */; };
 		5717620F24547D9E00F34257 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5717620E24547D9E00F34257 /* ViewController.m */; };
 		5717621224547D9E00F34257 /* Debase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5717621024547D9E00F34257 /* Debase.xcdatamodeld */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5715B13D245F72AD00D18266 /* ImageViewWithDragging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewWithDragging.h; sourceTree = "<group>"; };
+		5715B13E245F72AD00D18266 /* ImageViewWithDragging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewWithDragging.m; sourceTree = "<group>"; };
 		5717620724547D9E00F34257 /* Debase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Debase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5717620A24547D9E00F34257 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5717620B24547D9E00F34257 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 			children = (
 				5717620D24547D9E00F34257 /* ViewController.h */,
 				5717620E24547D9E00F34257 /* ViewController.m */,
+				5715B13D245F72AD00D18266 /* ImageViewWithDragging.h */,
+				5715B13E245F72AD00D18266 /* ImageViewWithDragging.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 				5717620F24547D9E00F34257 /* ViewController.m in Sources */,
 				5717621A24547D9F00F34257 /* main.m in Sources */,
 				5717620C24547D9E00F34257 /* AppDelegate.m in Sources */,
+				5715B13F245F72AD00D18266 /* ImageViewWithDragging.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
