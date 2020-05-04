@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ImageViewWithDragging : NSImageView <NSFilePromiseProviderDelegate, NSDraggingSource>
 
--(void) setProviderData:(NSData*)data;
+- (void)setProviderData:(NSDictionary *)dict;
 
 @end
 

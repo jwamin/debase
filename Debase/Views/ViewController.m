@@ -47,7 +47,16 @@
   }
   
   [_imageView setImage:img];
-  [(ImageViewWithDragging*)_imageView setProviderData:data];
+  
+  NSString *prefix = [value substringToIndex:5];
+  
+  NSDictionary *dictionary = @{
+    @"imgData": data,
+    @"imgName": prefix
+  };
+
+  [(ImageViewWithDragging*)_imageView setProviderData:dictionary];
+  
 }
 
 -(void) runString{

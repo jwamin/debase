@@ -14,6 +14,8 @@
 NSOperationQueue *queue;
 NSFilePromiseProvider *provider;
 
+NSDictionary *dataDict;
+
 -(NSOperationQueue*)queue {
   return queue;
 }
@@ -31,8 +33,9 @@ NSFilePromiseProvider *provider;
   
 }
 
-- (void)setProviderData:(NSData *)data{
-  [provider setUserInfo:data];
+- (void)setProviderData:(NSDictionary *)dict {
+  dataDict = dict;
+  [provider setUserInfo:[dict objectForKey:@"imgData"]];
 }
 
 
@@ -41,7 +44,8 @@ NSFilePromiseProvider *provider;
 }
 
 - (NSString *)filePromiseProvider:(NSFilePromiseProvider *)filePromiseProvider fileNameForType:(NSString *)fileType{
-  return @"test.jpg";
+  NSString *str = [dataDict objectForKey:@"imgName"];
+  return [str stringByAppendingString:@".jpg"];
 }
 
 - (void)filePromiseProvider:(NSFilePromiseProvider *)filePromiseProvider writePromiseToURL:(NSURL *)url completionHandler:(void (^)(NSError * _Nullable))completionHandler{
@@ -93,13 +97,6 @@ NSFilePromiseProvider *provider;
   }
    ];
   
-}
-
-
-- (void)drawRect:(NSRect)dirtyRect {
-  [super drawRect:dirtyRect];
-  
-  // Drawing code here.
 }
 
 
