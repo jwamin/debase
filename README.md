@@ -8,10 +8,10 @@
 
 * Paste base64 image text into text area to see image representation.
 * Character highlighting.
+* Drag resolved image to Finder
 
 ## TODO:
 
-* Drag resolved image to Finder
 * Undo text changes
 * Clear boilerplate NSMenu
 
