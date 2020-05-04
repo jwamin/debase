@@ -11,33 +11,38 @@
 
 @implementation ImageViewWithDragging
 
+#pragma mark - Private instance variables
 NSOperationQueue *queue;
 NSFilePromiseProvider *provider;
-
 NSDictionary *dataDict;
 
 -(NSOperationQueue*)queue {
   return queue;
 }
 
+#pragma mark - Lifecycle
 
 - (void)awakeFromNib{
   
+  //Create dragging serial queue
   queue = [[NSOperationQueue alloc] init];
   [queue setName:@"com.jossy.debase.background queue"];
   [queue setQualityOfService:NSQualityOfServiceDefault];
   
+  //set provider and delegate
   provider = [[NSFilePromiseProvider alloc] initWithFileType:(NSString*)kUTTypeJPEG delegate:self];
-  
   [provider setDelegate:self];
   
 }
+
+#pragma mark - Custom Methods
 
 - (void)setProviderData:(NSDictionary *)dict {
   dataDict = dict;
   [provider setUserInfo:[dict objectForKey:@"imgData"]];
 }
 
+#pragma mark - File Promise Provider
 
 - (NSOperationQueue *)operationQueueForFilePromiseProvider:(NSFilePromiseProvider *)filePromiseProvider{
   return [self queue];
@@ -61,15 +66,13 @@ NSDictionary *dataDict;
     completionHandler(nil);
   }
   
-  
-  
 }
+
+#pragma mark - Mouse Events
 
 - (void)mouseDown:(NSEvent *)event{
   
-  
   NSPoint location = [self convertPoint:[event locationInWindow] fromView:nil];
-
   
   CGFloat dragThreshold = 3.0;
   
@@ -83,7 +86,6 @@ NSDictionary *dataDict;
       *stop = YES;
       NSLog(@"up");
     } else {
-      
       NSLog(@"drag");
       NSPoint movedLocation = [self convertPoint:[event locationInWindow] fromView:nil];
       if (fabs(movedLocation.x - location.x) > dragThreshold || fabs(movedLocation.y - location.y) > dragThreshold) {
@@ -99,7 +101,7 @@ NSDictionary *dataDict;
   
 }
 
-
+#pragma mark - NSDragOperation
 
 - (NSDragOperation)draggingSession:(NSDraggingSession *)session sourceOperationMaskForDraggingContext:(NSDraggingContext)context{
   return (context == NSDraggingContextOutsideApplication) ? NSDragOperationCopy : NSDragOperationNone;

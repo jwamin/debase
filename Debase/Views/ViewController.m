@@ -32,16 +32,16 @@
 
   [self updateBase64String];
   [self handleStringForImage];
-  [self runString];
+  [self convertStringToAttributedColorString];
 
 }
 
 -(void)handleStringForImage{
   
   NSData *data = [[NSData alloc] initWithBase64EncodedString:value options:NSDataBase64DecodingIgnoreUnknownCharacters];
-  
   NSImage *img = [[NSImage alloc]initWithData:data];
   
+  //Provide Default image
   if (img == nil) {
     img = [NSImage imageNamed:NSImageNameCaution];
   }
@@ -59,7 +59,7 @@
   
 }
 
--(void) runString{
+-(void) convertStringToAttributedColorString{
   
   ViewController* __weak weakSelf = self;
   dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
@@ -107,11 +107,13 @@
   
 }
 
+#pragma mark - Actions
+
 - (void)textDidChange:(NSNotification *)notification{
  
   [self updateBase64String];
   [self handleStringForImage];
-  [self runString];
+  [self convertStringToAttributedColorString];
   
 }
 
